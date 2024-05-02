@@ -2,56 +2,7 @@
     display: none;
 }
 
-@media (max-width: 750px) {
-    .nav{
-        display: flex;
-    }
-    .nav ul{
-        list-style-type: none;
-    } 
-    nav>ul>li {
-        position: relative;
-    }
-    .nav li a{
-        display: block;
-        border: solid black 1px;
-        padding: 8px;
-        text-decoration: none;
-        background-color: #561BB6;
-    }
-    .nav li .second a{
-        border: solid black 1px;
-        background-color: #561BB6;
-        color: white;
-        width: 100%;
-    }
-    .nav li .second{
-        display: none;
-        position: absolute;
-        right: 10%;
-    }
-    .nav li:hover .second{
-        display: block;
-    }
-    .nav li{
-        width: 200px;   
-    }
-    * {
-        text-align: center;
-    }
-    .menu {
-        display: none;
-    }
-    .pod{
-        width: 70%;
-        height: 35%;
-        align-content: center;
-    }
-    img{
-        height: 100%;
-        width: 100%;
-    }
-}
+
 
 main img:hover {
     filter: grayscale(0%);
@@ -160,11 +111,77 @@ button{
     background-color: #561BB6;
     color: white;
     font-size: 20px;
-    margin-left: 1200px;
-    margin-bottom: 100px;
+    margin-left: 75%;
+    margin-bottom: 7%;
+    margin-top: 3%;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.75);
 }
 
 main{
     font-size: 17px;
+}
+
+@media (max-width: 750px) {
+    .nav{
+        display: flex;
+    }
+    .nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    } 
+    nav>ul>li {
+        position: relative;
+    }
+    .nav li a{
+        display: block;
+        border: solid black 1px;
+        padding: 8px;
+        text-decoration: none;
+        background-color: #561BB6;
+    }
+    .nav li .second a{
+        border: solid black 1px;
+        background-color: #561BB6;
+        color: white;
+        width: 100%;
+    }
+    .nav li .second{
+        display: none;
+        position: absolute;
+        right: 10%;
+    }
+    .nav li:hover .second{
+        display: block;
+    }
+    .nav li{
+        width: 100px;   
+    }
+    * {
+        text-align: center;
+    }
+    .menu {
+        display: none;
+    }
+    .pod{
+        width: 70%;
+        height: 35%;
+        align-content: center;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .burgerNav {
+        display: flex;
+        font-size: 40px;
+        justify-content: center;
+      }
+      h1{
+        font-size: 25px;
+      }
+      button{
+        margin-left: 0;
+      }
 }

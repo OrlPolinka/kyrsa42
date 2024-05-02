@@ -2,68 +2,7 @@
     display: none;
 }
 
-@media (max-width: 750px) {
-    .nav{
-        display: flex;
-    }
-    .nav ul{
-        list-style-type: none;
-    } 
-    nav>ul>li {
-        position: relative;
-    }
-    .nav li a{
-        display: block;
-        border: solid black 1px;
-        padding: 8px;
-        text-decoration: none;
-        background-color: #561BB6;
-    }
-    .nav li .second a{
-        border: solid black 1px;
-        background-color: #561BB6;
-        color: white;
-        width: 100%;
-    }
-    .nav li .second{
-        display: none;
-        position: absolute;
-        right: 10%;
-    }
-    .nav li:hover .second{
-        display: block;
-    }
-    .nav li{
-        width: 200px;   
-    }
-    * {
-        text-align: center;
-    }
-    .menu {
-        display: none;
-    }
-    .pod{
-        width: 70%;
-        height: 35%;
-        align-content: center;
-    }
-    img{
-        height: 35%;
-        width: 70%;
-    }   
-    .s1{
-        margin-top: -129px;
-    }
-    .s2{
-        margin-top: 520px;
-    }
-    .s3{
-        margin-top: 915px;
-    }
-    .s4{
-        margin-top: 1455px;
-    }
-}
+
 
 @font-face {font-family: 'Exo2';
     src: url('fonts/Exo2.woff') format('woff');}
@@ -162,6 +101,7 @@ main img{
 
 .blok1{
     margin-right: 30px;
+    margin-left: 30px;
 }
 
 .blok2{
@@ -169,39 +109,93 @@ main img{
     margin-right: 30px;
 }
 
+.linkP{
+    position: relative;
+}
+
+
+
 .s1{
     position: absolute;
-    font-size: 15px;
-    left: 50px;
-    top: 490px;
+    bottom:-290px;
+    left: 40px;
     color: white;
+    font-size: 15px;
 }
 
-.s2{
-    position: absolute;
-    font-size: 15px;
-    left: 50px;
-    top: 1010px;
-    color: white;
-}
-
-.s3{
-    position: absolute;
-    font-size: 15px;
-    left: 50px;
-    top: 1427px;
-    color: white;
-}
-
-.s4{
-    position: absolute;
-    font-size: 15px;
-    left: 50px;
-    top: 1845px;
-    color: white;
-}
-
-body main div a img:hover{
+body main div img:hover{
     transform: scale(1.1);
     transition: transform linear 1;
+}
+
+@media (max-width: 750px) {
+    
+    .nav{
+        display: flex;
+    }
+    .nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    } 
+    nav>ul>li {
+        position: relative;
+    }
+    .nav li a{
+        display: block;
+        border: solid black 1px;
+        padding: 8px;
+        text-decoration: none;
+        background-color: #561BB6;
+    }
+    .nav li .second a{
+        border: solid black 1px;
+        background-color: #561BB6;
+        color: white;
+        width: 100%;
+    }
+    .nav li .second{
+        display: none;
+        position: absolute;
+        right: 10%;
+    }
+    .nav li:hover .second{
+        display: block;
+    }
+    .nav li{
+        width: 100px;   
+    }
+    * {
+        text-align: center;
+    }
+    .menu {
+        display: none;
+    }
+    .pod{
+        width: 70%;
+        height: 35%;
+        align-content: center;
+    }
+    .burgerNav {
+        display: flex;
+        font-size: 40px;
+        justify-content: center;
+      }
+      main img{
+        width: 90%;
+        height: auto;
+        margin: 5%; /* Выравнивание по центру */
+        display: block; /* Отображение как блочный элемент */
+        
+      }
+      .s1{
+        position: absolute;
+        bottom: -60vw;
+        left: 40px;
+        color: white;
+        font-size: 15px;
+    }
+    h1{
+        font-size: 25px;
+    }
 }

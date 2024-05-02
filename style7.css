@@ -2,63 +2,7 @@
     display: none;
 }
 
-@media (max-width: 750px) {
-    .nav{
-        display: flex;
-    }
-    .nav ul{
-        list-style-type: none;
-    } 
-    nav>ul>li {
-        position: relative;
-    }
-    .nav li a{
-        display: block;
-        border: solid black 1px;
-        padding: 8px;
-        text-decoration: none;
-        background-color: #561BB6;
-    }
-    .nav li .second a{
-        border: solid black 1px;
-        background-color: #561BB6;
-        color: white;
-        width: 100%;
-    }
-    .nav li .second{
-        display: none;
-        position: absolute;
-        right: 10%;
-    }
-    .nav li:hover .second{
-        display: block;
-    }
-    .nav li{
-        width: 200px;   
-    }
-    * {
-        text-align: center;
-    }
-    .menu {
-        display: none;
-    }
-    .pod{
-        width: 70%;
-        height: 35%;
-        align-content: center;
-    }
-    input, select, buttom{
-        width: 100px;
-    }
-    main div{
-        margin-left: 0px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        width: 50px;
-        height: 40px;
-        ;
-    }
-}
+
 
 @font-face {font-family: 'Exo2';
     src: url('fonts/Exo2.woff') format('woff');}
@@ -159,9 +103,84 @@ button{
 }
 
 main div{
-    margin-left: 485px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 100px;
     margin-bottom: 100px;
-    width: 180px;
-    height: 40px;
+    width: 100%; /* Занимать всю доступную ширину */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+form{
+    display: block;
+}
+
+@media (max-width: 750px) {
+    .nav{
+        display: flex;
+    }
+    .nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    } 
+    nav>ul>li {
+        position: relative;
+    }
+    .nav li a{
+        display: block;
+        border: solid black 1px;
+        padding: 8px;
+        text-decoration: none;
+        background-color: #561BB6;
+    }
+    .nav li .second a{
+        border: solid black 1px;
+        background-color: #561BB6;
+        color: white;
+        width: 100%;
+    }
+    .nav li .second{
+        display: none;
+        position: absolute;
+        right: 10%;
+    }
+    .nav li:hover .second{
+        display: block;
+    }
+    .nav li{
+        width: 100px;   
+    }
+    * {
+        text-align: center;
+    }
+    .menu {
+        display: none;
+    }
+    .pod{
+        width: 70%;
+        height: 35%;
+        align-content: center;
+    }
+    form {
+        margin: 0 auto;
+        max-width: 500px; /* Максимальная ширина формы */
+        padding: 0 20px; /* Отступы по бокам */
+    }
+
+    input, select, button {
+        width: 100%; /* Занимать всю доступную ширину */
+        margin-bottom: 20px; /* Добавить отступ снизу между элементами */
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .burgerNav {
+        display: flex;
+        font-size: 40px;
+        justify-content: center;
+      }
+      h1{
+        font-size: 25px;
+    }
 }
