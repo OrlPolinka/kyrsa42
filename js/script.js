@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     let arrayParg = [];
 
-    fetch('index.xml')
+    fetch('js/index.xml')
         .then(function (response) {
             return response.text();
         })

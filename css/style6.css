@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Exo2";
+  src: url("fonts/Exo2.woff") format("woff");
+}
+.nav {
+  display: none;
+}
+
+main {
+  font-size: 17px;
+}
+main img {
+  filter: grayscale(100%);
+}
+main img:hover {
+  filter: grayscale(0%);
+}
+
+* {
+  font-family: "Exo2";
+}
+
+body {
+  margin: 0;
+  background-color: #ACAAF6;
+}
+body header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
+  background-color: #561BB6;
+}
+body header a {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+}
+body header nav a {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #561BB6;
+  color: white;
+  padding: 3%;
+  padding-bottom: 4%;
+  margin-bottom: 0;
+}
+footer div img {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.podval {
+  width: 40%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.one {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.conteiner {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.content {
+  margin-right: 30px;
+}
+
+figcaption {
+  color: #CC0505;
+  font-size: 40px;
+}
+
+.logo {
+  height: auto;
+  width: 65px;
+}
+
+.fig {
+  display: inline-block;
+  float: left;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+button {
+  width: 180px;
+  height: 40px;
+  background-color: #561BB6;
+  color: white;
+  font-size: 20px;
+  margin-left: 75%;
+  margin-bottom: 7%;
+  margin-top: 3%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 750px) {
+  .nav {
+    display: flex;
+  }
+  .nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nav li {
+    width: 100px;
+  }
+  .nav li a {
+    display: block;
+    border: solid black 1px;
+    padding: 8px;
+    text-decoration: none;
+    background-color: #561BB6;
+  }
+  .nav li .second {
+    display: none;
+    position: absolute;
+    right: 10%;
+  }
+  .nav li .second a {
+    border: solid black 1px;
+    background-color: #561BB6;
+    color: white;
+    width: 100%;
+  }
+  .nav li:hover .second {
+    display: block;
+  }
+  nav > ul > li {
+    position: relative;
+  }
+  * {
+    text-align: center;
+  }
+  .menu {
+    display: none;
+  }
+  .conteiner {
+    flex-direction: column;
+  }
+  .podval {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .fig img {
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    display: block;
+  }
+  .burgerNav {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  button {
+    margin-left: 0;
+  }
+  .image img {
+    width: 50px;
+    height: auto;
+  }
+}

@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "Exo2";
+  src: url("fonts/Exo2.woff") format("woff");
+}
+.nav {
+  display: none;
+}
+
+* {
+  font-family: "Exo2";
+}
+
+body {
+  margin: 0;
+  background-color: #ACAAF6;
+}
+body header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
+  background-color: #561BB6;
+}
+body header a {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+}
+body header nav a {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: auto;
+  width: 65px;
+}
+
+.menu a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #561BB6;
+  color: white;
+  padding: 3%;
+  padding-bottom: 4%;
+  margin-bottom: 0;
+}
+footer div img {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.podval {
+  width: 40%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.one {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.conteiner {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+input {
+  width: 500px;
+  font-size: 20px;
+  height: 50px;
+  background-color: #ACAAF6;
+  border: none;
+  border-bottom: 1px solid #561BB6;
+  color: white;
+}
+
+select {
+  width: 500px;
+  font-size: 20px;
+  height: 50px;
+  background-color: #ACAAF6;
+  border: none;
+  border-bottom: 1px solid #561BB6;
+  color: white;
+}
+
+button {
+  width: 500px;
+  height: 50px;
+  background-color: #561BB6;
+  color: white;
+  font-size: 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.75);
+}
+
+main div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+form {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .nav {
+    display: flex;
+  }
+  .nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nav li {
+    width: 100px;
+  }
+  .nav li a {
+    display: block;
+    border: solid black 1px;
+    padding: 8px;
+    text-decoration: none;
+    background-color: #561BB6;
+  }
+  .nav li .second {
+    display: none;
+    position: absolute;
+    right: 10%;
+  }
+  .nav li .second a {
+    border: solid black 1px;
+    background-color: #561BB6;
+    color: white;
+    width: 100%;
+  }
+  .nav li:hover .second {
+    display: block;
+  }
+  nav > ul > li {
+    position: relative;
+  }
+  * {
+    text-align: center;
+  }
+  .menu {
+    display: none;
+  }
+  .conteiner {
+    flex-direction: column;
+  }
+  .podval {
+    width: 100%;
+    margin-top: 20px;
+  }
+  form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 20px;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  select {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .burgerNav {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .image img {
+    width: 50px;
+    height: auto;
+  }
+}

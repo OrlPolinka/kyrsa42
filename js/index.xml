@@ -6,7 +6,7 @@
             <linkP>
                 <link__container>
                     <link__href>page3.html</link__href>
-                    <imagine__src>italy.avif</imagine__src>
+                    <imagine__src>картинки/italy.avif</imagine__src>
                 </link__container>
             </linkP>
             <blok1>
@@ -23,7 +23,7 @@
             <linkP>
                 <link__container>
                     <link__href>page4.html</link__href>
-                    <imagine__src>turkey.avif</imagine__src>
+                    <imagine__src>картинки/turkey.avif</imagine__src>
                 </link__container>
             </linkP>
             <blok1>
@@ -39,7 +39,7 @@
             <linkP>
                 <link__container>
                     <link__href>page5.html</link__href>
-                    <imagine__src>georgia.avif</imagine__src>
+                    <imagine__src>картинки/georgia.avif</imagine__src>
                 </link__container>
             </linkP>
             <blok1>
@@ -55,7 +55,7 @@
             <linkP>
                 <link__container>
                     <link__href>page6.html</link__href>
-                    <imagine__src>sweden.avif</imagine__src>
+                    <imagine__src>картинки/sweden.avif</imagine__src>
                 </link__container>
             </linkP>
             <blok1>
