@@ -155,7 +155,7 @@ h2 {
   margin-bottom: -20%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 430px) {
   .nav {
     display: flex;
   }
