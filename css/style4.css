@@ -132,7 +132,7 @@ button {
   width: 65px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 750px) {
   .nav {
     display: flex;
   }
